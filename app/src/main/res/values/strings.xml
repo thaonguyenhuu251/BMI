@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">BMI</string>
     <string name="bmi">Tính BMI</string>
-    <string name="weight">nhập cân nặng</string>
-    <string name="input_height">nhập chiều cao</string>
+    <string name="weight">nhập cân nặng (kg)</string>
+    <string name="input_height">nhập chiều cao (cm)</string>
     <string name="height">Chiều cao:</string>
     <string name="input_name">nhập tên</string>
     <string name="name">Nhập tên:</string>

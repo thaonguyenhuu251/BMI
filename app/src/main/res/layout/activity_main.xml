@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:hint="@string/input_name"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="@+id/txtInputName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
@@ -51,6 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:hint="@string/input_height"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/txtHeight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
@@ -76,6 +78,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
         android:hint="@string/weight"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/txtWeight"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
@@ -120,7 +123,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:hint="@string/weight"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/txtBMI"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
@@ -130,25 +133,24 @@
         android:id="@+id/txtResult"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:paddingStart="5dp"
         android:text="Chuẩn đoán: "
         android:textColor="@color/black"
         android:textSize="16dp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/edtResult"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtBMI" />
+        app:layout_constraintTop_toTopOf="@+id/edtResult" />
 
     <EditText
         android:id="@+id/edtResult"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:hint="@string/weight"
-        app:layout_constraintBottom_toBottomOf="@+id/txtResult"
+        android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/txtResult" />
+        app:layout_constraintTop_toBottomOf="@+id/edtBMI" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
